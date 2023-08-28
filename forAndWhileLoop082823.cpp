@@ -72,6 +72,28 @@ int main()
         cout << "\n\n this statement is false";
     }
 
+        //attempt at making a hash map
+    map<string, int> myDictionary01;
+    myDictionary01.insert(pair<string, int>("a", 4));
+    myDictionary01.insert(pair<string, int>("b", 3));
+    myDictionary01.insert(pair<string, int>("c", 2));
+    myDictionary01.insert(pair<string, int>("d", 5));
+
+    for (auto pair : myDictionary01){
+        cout << pair.first << " - " << pair.second << endl;
+}
+    // increment the values of our keys
+    myDictionary01["b"]++;
+    myDictionary01["c"]++;
+    myDictionary01["c"]++;
+
+    cout << "\n\n\n";
+
+     for (auto pair : myDictionary01){
+        cout << pair.first << " - " << pair.second <<endl;
+     }
+
+
 
     return 0;
 }
